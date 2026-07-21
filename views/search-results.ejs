@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs'); %>
+<body>
+    <main class="container">
+        <div class="container px-6">
+            <h3><%= books.length %> results found!</h3>
+            <% for(let book of books){ %>
+                <div class="container my-6">
+                    <figure>
+                        <a href="<%= book.link %>"><img src= "<%= book.bookCoverLink %>" loading="lazy" alt=""></a>
+                        <figcaption>
+                            <h3 class="display-6"><a href="<%= book.link %>" ><%= book.title %></a></h3>
+                            <br/>
+                            <p class="lead">
+                                <em>By <%= book.author%></em> 
+                            </p>
+                            <p class="lead">
+                                Recommend it: <strong><%= book.rating %>/10.</strong>
+                                <br/>
+                                Date read: <time datetime=<%= book.date %>><%= book.date %></time>.
+                            </p>
+                            <p class="lead">
+                                <%= book.shortNote %>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <hr>
+                </div>
+            <% } %>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<%- include('partials/footer.ejs'); %>

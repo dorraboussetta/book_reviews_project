@@ -1,0 +1,52 @@
+body{
+    background-color: #FAEEE0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+button,p{
+    font-family: "Inter", sans-serif;
+}
+button{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: #5E454B;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline;
+}
+
+.read-more-btn{
+    text-decoration: none;
+    color: inherit;
+
+}
+a{
+    color: #5E454B;
+}
+
+.hero-section{
+    background-color: #CEE5D0;
+}
+
+header{
+    background-color: #D8B384;
+}
+
+figure{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.profile-image{
+    height: 200px;
+    border-radius: 50%;
+    border-color: wheat;
+}
+
+.about-me-div{
+    background-color: #CEE5D0;
+    border-radius: 30%;
+}
